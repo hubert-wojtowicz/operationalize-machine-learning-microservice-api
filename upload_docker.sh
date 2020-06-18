@@ -13,9 +13,9 @@ dockerpath="$login/$repoName"
 # Authenticate & tag
 echo "Sign in to $login DockerHub account"
 docker login -u "$login"
-echo "Docker ID and Image: $dockerpath"
+echo "Docker ID and Image: $dockerpath"c
 
 # Step 3:
 # Push image to a docker repository
-docker tag prediction-app hubertos/udacity-project:prediction-app
-docker push hubertos/udacity-project:prediction-app
+docker tag prediction-app hubertos/prediction-app
+docker push hubertos/prediction-app
