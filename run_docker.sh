@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
-## Complete the following steps to get Docker running locally
+appName="prediction-app"
+appContainerHostPort=8000
+appContainerInstanceName="instance-1"
 
+## Complete the following steps to get Docker running locally
 # Step 1:
 # Build image and add a descriptive tag
-docker build --tag=prediction-app .
+docker build --tag=$appName .
 
 # Step 2: 
 # List docker images
@@ -12,7 +15,8 @@ docker images
 
 # Step 3: 
 # Run flask app
-docker run -p 8000:80 prediction-app 
+echo "Expose app container on host port: $appContainerHostPort"
+docker run -p $appContainerHostPort:80 $appName
 
 # alternative with container manual name assignment
-# docker run -p 8000:80 --name prediction-app-instance-1 prediction-app 
+# docker run -p $appContainerHostPort:80 --name $(echo "$appName-$appContainerInstanceName") $appName

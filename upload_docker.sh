@@ -6,16 +6,16 @@
 # Step 1:
 # Create dockerpath
 login="hubertos"
-repoName="udacity-project"
-dockerpath="$login/$repoName"
+appName="prediction-app"
+dockerpath="$login/$appName"
 
 # Step 2:  
 # Authenticate & tag
 echo "Sign in to $login DockerHub account"
 docker login -u "$login"
-echo "Docker ID and Image: $dockerpath"c
+echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
-docker tag prediction-app hubertos/prediction-app
-docker push hubertos/prediction-app
+docker tag $appName $dockerpath
+docker push $dockerpath
