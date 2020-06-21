@@ -14,7 +14,7 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
-	wget -O ./hadolint https://github.com/hadolint/hadolint/releases/download/v1.18.0/hadolint-Linux-x86_64 && chmod +x ./hadolint && sudo mv ./hadolint /bin
+	wget -O ./hadolint https://github.com/hadolint/hadolint/releases/download/v1.18.0/hadolint-Linux-x86_64 && chmod +x ./hadolint && mv ./hadolint /bin
 
 test:
 	# Additional, optional, tests could go here
