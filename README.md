@@ -1,5 +1,9 @@
 [![CircleCI](https://circleci.com/gh/hubert-wojtowicz/operationalize-machine-learning-microservice-api.svg?style=svg)](https://circleci.com/gh/hubert-wojtowicz/operationalize-machine-learning-microservice-api)
 
+## Projecr Submission files
+
+Requires `docker_out.txt` and `kubernetes_out.txt` can be found in `project_submission_data/` folder.
+
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
@@ -32,6 +36,7 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
+NOTE: before you will executr `./run_docker.sh` you need to publish (if never before) docker image with `upload_docker.sh`.
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
