@@ -1,9 +1,5 @@
 [![CircleCI](https://circleci.com/gh/hubert-wojtowicz/operationalize-machine-learning-microservice-api.svg?style=svg)](https://circleci.com/gh/hubert-wojtowicz/operationalize-machine-learning-microservice-api)
 
-## Projecr Submission files
-
-Required `docker_out.txt` and `kubernetes_out.txt` can be found in `project_submission_data/` folder.
-
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
@@ -45,3 +41,8 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+
+## Projecr Submission files
+
+Required `docker_out.txt` and `kubernetes_out.txt` can be found in `output_txt_files/` folder.
